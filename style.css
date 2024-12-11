@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Poppins;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.clock {
+    padding: 10px;
+    /* background-color: rgb(227, 243, 240); */
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 10px;
+    border: 2px double gray;
+    width: 60%;
+    position: relative;
+    left: 350px;
+    bottom: 20px;
+    box-shadow: 5px 10px 15px 0px;
+    /* margin-top: 50px; */
+
+}
+
+.clock span {
+    font-size: 150px;
+    font-weight: 700;
+    /* border:solid 2px gray; */
+    padding: 20px;
+
+}
+
+#hrs::after {
+    content: "HOURS";
+    display: block;
+    font-size: 20px;
+    text-align: center;
+}
+
+#min::after {
+    content: "MINUTES";
+    display: block;
+    font-size: 20px;
+    text-align: center;
+}
+
+#sec::after {
+    content: "SECONDS";
+    display: block;
+    font-size: 20px;
+    text-align: center;
+}
+
+#day::after {
+    content: "DAY";
+    display: block;
+    font-size: 20px;
+    text-align: center;
+}
+
+#year::after {
+    content: "YEARS";
+    display: block;
+    font-size: 20px;
+    text-align: center;
+}
+
+video {
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.container {
+    position: relative;
+    background-color: transparent;
+    bottom: 800px;
+
+
+}
+
+.days {
+    padding: 10px;
+    display: flex;
+    background: transparent;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 10px;
+    width: 40%;
+    position: relative;
+    left: 500px;
+    border: 2px double gray;
+    top: 5px;
+    box-shadow: 5px 10px 15px 0px;
+    margin-bottom: 50px;
+}
+
+.days span {
+    font-size: 60px;
+    font-weight: 700;
+    padding: 5px;
+    /* border:solid 2px gray; */
+
+
+
+}
